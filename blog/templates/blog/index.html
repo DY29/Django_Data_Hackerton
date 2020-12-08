@@ -43,21 +43,20 @@
   <header id="header" class="fixed-top ">
     <div class="container d-flex align-items-center">
 
-      <h1 class="logo mr-auto"><a href="index.html">팀 포세이돈</a></h1>
+      <h7 class="logo mr-auto"><a href="#hero">청년인턴십 언택트해커톤</a></h7>
       <!-- Uncomment below if you prefer to use an image logo -->
        <a href="index.html" class="logo mr-auto"><img src='{% static "img/logo.png" %}' alt="" class="img-fluid"></a>
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-          <li class="active"><a href="index.html">홈</a></li>
+          <li class="active"><a href="#hero">홈</a></li>
           <li><a href="#about">개요</a></li>
           <li><a href="#services">기대효과</a></li>
           <li><a href="#portfolio">수질지도</a></li>
           <li><a href="#team">팀 포세이돈</a></li>
-          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav><!-- .nav-menu -->
 
-      <a href="#about" class="get-started-btn scrollto">Get Started</a>
+      <a href="#about" class="get-started-btn scrollto">시작하기</a>
 
     </div>
   </header><!-- End Header -->
@@ -72,7 +71,7 @@
           <h2>물, 안심하고 마시자</h2>
           <div class="d-lg-flex">
             <a href="#about" class="btn-get-started scrollto">시작하기</a>
-            <a href="https://www.youtube.com/watch?v=a_Q2ooFb6gA&ab_channel=%ED%96%89%EC%A0%95%EC%95%88%EC%A0%84%EB%B6%80" class="venobox btn-watch-video" data-vbtype="video" data-autoplay="true"> 공공데이터 청년인턴십 홍보 영상보기 <i class="icofont-play-alt-2"></i></a>
+            <a href="https://youtu.be/SwSMnY7KHF0" class="venobox btn-watch-video" data-vbtype="video" data-autoplay="true"> 수(水)리수리 정(淨)수리 가이드 영상 보기 <i class="icofont-play-alt-2"></i></a>
           </div>
         </div>
         <div class="col-lg-6 order-1 order-lg-2 main" data-aos="zoom-in" data-aos-delay="200">
@@ -92,27 +91,27 @@
         <div class="row" data-aos="zoom-in">
 
           <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src='{% static "img/clients/haengan.png" %}' class="img-fluid" alt="">
+            <img src='{% static "img/clients/haengan.png" %}' class="img-fluid" alt="" style="max-width:100%; height:auto;">
           </div>
 
           <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src='{% static "img/clients/intership.png" %}' class="img-fluid" alt="">
+            <img src='{% static "img/clients/intership.png" %}' class="img-fluid" alt="" style="max-width:100%; height:auto;">
           </div>
 
           <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src='{% static "img/clients/sum.png" %}' class="img-fluid" alt="">
+            <img src='{% static "img/clients/sum.png" %}' class="img-fluid" alt="" style="max-width:100%; height:auto;">
           </div>
 
           <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src='{% static "img/clients/koreadata.jpg" %}' class="img-fluid" alt="">
+            <img src='{% static "img/clients/koreadata.jpg" %}' class="img-fluid" alt="" style="max-width:100%; height:auto;">
           </div>
 
           <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src='{% static "img/clients/hackerton.png" %}' class="img-fluid" alt="">
+            <img src='{% static "img/clients/hackerton.png" %}' class="img-fluid" alt="" style="max-width:100%; height:auto;">
           </div>
 
           <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src='{% static "img/clients/hackerton2.png" %}' class="img-fluid" alt="">
+            <img src='{% static "img/clients/hackerton2.png" %}' class="img-fluid" alt="" style="max-width:100%; height:auto;">
           </div>
 
         </div>
@@ -156,15 +155,12 @@
     <!-- ======= Why Us Section ======= -->
     <section id="why-us" class="why-us section-bg">
       <div class="container-fluid" data-aos="fade-up">
-
         <div class="row">
-
           <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
-
             <div class="content">
-              <h3>Eum ipsam laborum deleniti <strong>velit pariatur architecto aut nihil</strong></h3>
+              <h3>대구시민들은 <strong>왜 수돗물을 마시지 않을까?</strong></h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
+                대구시 거주 만19세 이상 성인 남녀 1,002명을 대상으로한 설문조사 결과에 따르면 수돗물을 마시지 않는 이유에는 이러한 이유가 있습니다.
               </p>
             </div>
 
@@ -199,14 +195,17 @@
 
               </ul>
             </div>
-
           </div>
 
-          <div class="col-lg-5 align-items-stretch order-1 order-lg-2 img" style='background-image: url('{% static "img/why-us.png" %}');' data-aos="zoom-in" data-aos-delay="150">&nbsp;</div>
-        </div>
+          <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-2" ><canvas id="pieChart"></canvas>
+          </div>
+         </div>
 
-      </div>
-    </section><!-- End Why Us Section -->
+
+        </div>
+    </section>
+    <!-- End Why Us Section -->
+
 
     <!-- ======= Skills Section ======= -->
     <section id="skills" class="skills">
@@ -218,7 +217,7 @@
           <div class="col-lg-6 pt-4 pt-lg-0 content" data-aos="fade-left" data-aos-delay="100">
             <h3>수돗물을 마시지 않는 이유는?</h3>
             <p class="font-italic">
-              프로젝트 진행에 앞서, 전국의 만 19세 이상 성인 남녀 1000명을 대상으로 "수돗물을 마시지 않는 이유"에 대한 설문조사 결과는 다음과 같았습니다.
+              프로젝트 진행에 앞서 살펴본 전국의 만 19세 이상 성인 남녀 1000명을 대상으로 "수돗물을 마시지 않는 이유"에 대한 설문조사의 결과는 다음과 같았습니다.
             </p>
 
             <div class="skills-content">
@@ -226,42 +225,42 @@
               <div class="progress">
                 <span class="skill">이물질이 나와서 <i class="val">25.2%</i></span>
                 <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                  <div class="progress-bar" role="progressbar" aria-valuenow="38" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
               </div>
 
               <div class="progress">
                 <span class="skill">막연한 불안감 <i class="val">21.8%</i></span>
                 <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="21" aria-valuemin="0" aria-valuemax="100"></div>
+                  <div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
               </div>
 
               <div class="progress">
                 <span class="skill">정수시스템 신뢰불가 <i class="val">14.7%</i></span>
                 <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                  <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
               </div>
 
               <div class="progress">
                 <span class="skill">상수원이 깨끗하지 않아서 <i class="val">14.6%</i></span>
                 <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="14" aria-valuemin="0" aria-valuemax="100"></div>
+                  <div class="progress-bar" role="progressbar" aria-valuenow="24" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
               </div>
 
               <div class="progress">
                 <span class="skill">맛없어서 <i class="val">12.5%</i></span>
                 <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="13" aria-valuemin="0" aria-valuemax="100"></div>
+                  <div class="progress-bar" role="progressbar" aria-valuenow="21" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
               </div>
 
               <div class="progress">
                 <span class="skill">기타 <i class="val">11.2%</i></span>
                 <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="11" aria-valuemin="0" aria-valuemax="100"></div>
+                  <div class="progress-bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
               </div>
 
@@ -340,116 +339,30 @@
     <!-- ======= Portfolio Section ======= -->
     <section id="portfolio" class="portfolio">
       <div class="container" data-aos="fade-up">
-
         <div class="section-title">
           <h2>수질지도</h2>
           <p> 수질지도는 전국 약수터 수질현황, 전국 상수도 수질 현황을 볼수 있도록 구성하였고
             <br>추가로 '서울시 맛있는 물'가이드라인에 적합한 수질을 가진 여러 지역을 한눈에 파악 할 수 있도록 구성하였습니다.</p>
         </div>
-
         <ul id="portfolio-flters" class="d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
-          <li data-filter="*" class="filter-active">All</li>
-          <li data-filter=".filter-app">App</li>
-          <li data-filter=".filter-card">Card</li>
-          <li data-filter=".filter-web">Web</li>
+          <li data-filter=".filter-app" class="filter-active">All</li>
+          <li data-filter=".filter-app">전국 물 맛집 탐방</li>
+          <li data-filter=".filter-card">전국 약수터 현황</li>
+          <li data-filter=".filter-web">우리동네 약수터는?</li>
         </ul>
-
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-img"><img src='{% static "img/portfolio/portfolio-1.jpg" %}' class="img-fluid" alt=""></div>
-            <div class="portfolio-info">
-              <h4>App 1</h4>
-              <p>App</p>
-              <a href='{% static "img/portfolio/portfolio-1.jpg" %}' data-gall="portfolioGallery" class="venobox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
+            <iframe src="https://public.tableau.com/views/_v1_9_16074518388790/sheet6?:language=ko&:display_count=y&publish=yes&:origin=viz_share_link?:showVizHome=no&:embed=true" width="1005" height="832"></iframe>
           </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-img"><img src='{% static "img/portfolio/portfolio-2.jpg" %}' class="img-fluid" alt=""></div>
-            <div class="portfolio-info">
-              <h4>Web 3</h4>
-              <p>Web</p>
-              <a href='{% static "img/portfolio/portfolio-2.jpg" %}' data-gall="portfolioGallery" class="venobox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-img"><img src='{% static "img/portfolio/portfolio-3.jpg" %}' class="img-fluid" alt=""></div>
-            <div class="portfolio-info">
-              <h4>App 2</h4>
-              <p>App</p>
-              <a href='{% static "img/portfolio/portfolio-3.jpg" %}' data-gall="portfolioGallery" class="venobox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
           <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-img"><img src='{% static "img/portfolio/portfolio-4.jpg" %}' class="img-fluid" alt=""></div>
-            <div class="portfolio-info">
-              <h4>Card 2</h4>
-              <p>Card</p>
-              <a href='{% static "img/portfolio/portfolio-4.jpg" %}' data-gall="portfolioGallery" class="venobox preview-link" title="Card 2"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
+            <iframe src="https://public.tableau.com/views/_v1_9_16074518388790/sheet4?:language=ko&:display_count=y&publish=yes&:origin=viz_share_link?:showVizHome=no&:embed=true" width="1005" height="832"></iframe>
           </div>
-
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-img"><img src='{% static "img/portfolio/portfolio-5.jpg" %}' class="img-fluid" alt=""></div>
-            <div class="portfolio-info">
-              <h4>Web 2</h4>
-              <p>Web</p>
-              <a href='{% static "img/portfolio/portfolio-5.jpg" %}' data-gall="portfolioGallery" class="venobox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
+            <iframe src="https://public.tableau.com/views/_v1_9_16074518388790/sheet5?:language=ko&:display_count=y&publish=yes&:origin=viz_share_link?:showVizHome=no&:embed=true" width="1005" height="832"></iframe>
           </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-img"><img src='{% static "img/portfolio/portfolio-6.jpg" %}' class="img-fluid" alt=""></div>
-            <div class="portfolio-info">
-              <h4>App 3</h4>
-              <p>App</p>
-              <a href='{% static "img/portfolio/portfolio-6.jpg" %}' data-gall="portfolioGallery" class="venobox preview-link" title="App 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-img"><img src='{% static "img/portfolio/portfolio-7.jpg" %}' class="img-fluid" alt=""></div>
-            <div class="portfolio-info">
-              <h4>Card 1</h4>
-              <p>Card</p>
-              <a href='{% static "img/portfolio/portfolio-7.jpg" %}' data-gall="portfolioGallery" class="venobox preview-link" title="Card 1"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-img"><img src='{% static "img/portfolio/portfolio-8.jpg" %}' class="img-fluid" alt=""></div>
-            <div class="portfolio-info">
-              <h4>Card 3</h4>
-              <p>Card</p>
-              <a href='{% static "img/portfolio/portfolio-8.jpg" %}' data-gall="portfolioGallery" class="venobox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-img"><img src='{% static "img/portfolio/portfolio-9.jpg" %}' class="img-fluid" alt=""></div>
-            <div class="portfolio-info">
-              <h4>Web 3</h4>
-              <p>Web</p>
-              <a href='{% static "img/portfolio/portfolio-9.jpg" %}' data-gall="portfolioGallery" class="venobox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
         </div>
-
       </div>
-    </section><!-- End Portfolio Section -->
+     </section><!-- End Portfolio Section -->
 
     <!-- ======= Team Section ======= -->
     <section id="team" class="team section-bg">
@@ -457,7 +370,7 @@
 
         <div class="section-title">
           <h2>팀 포세이돈</h2>
-          <p> 이상으로 수리수리 정수리 프로젝트는 이러한 분들이 함께 의기투합하여 제작하였습니다.</p>
+          <p> 수리수리 정수리 프로젝트는 이러한 분들이 함께 의기투합하여 제작하였습니다.</p>
         </div>
 
         <div class="row">
@@ -467,7 +380,9 @@
               <div class="pic"><img src='{% static "img/team/man.png" %}' class="img-fluid" alt=""></div>
               <div class="member-info">
                 <h4>권다연</h4>
-                <span>대구광역시센터 23팀 소속</span>
+                <span>2020 공공데이터 청년 인턴십
+                  <br>행안부/한국정보화진흥원 <br>대구광역시센터 직접사업 23팀</br>
+                </span>
                 <p>데이터분석</p>
                 <div class="social">
                   <a href=""><i class="ri-twitter-fill"></i></a>
@@ -485,7 +400,9 @@
               <div class="pic"><img src='{% static "img/team/man.png" %}' class="img-fluid" alt=""></div>
               <div class="member-info">
                 <h4>김나현</h4>
-                <span>대구광역시센터 20팀 소속속</span>
+                <span>2020 공공데이터 청년 인턴십
+                  <br>행안부/한국정보화진흥원 <br>대구광역시센터 직접사업 20팀</br>
+                </span>
                <p>개발</p>
                 <div class="social">
                   <a href=""><i class="ri-twitter-fill"></i></a>
@@ -502,7 +419,9 @@
               <div class="pic"><img src='{% static "img/team/man.png" %}' class="img-fluid" alt=""></div>
               <div class="member-info">
                 <h4>양예림</h4>
-                <span>경남</span>
+                <span>2020 공공데이터 청년 인턴십
+                  <br>경상남도센터 거제해양관광공사</br>
+                </span>
                 <p>PPT 디자인</p>
                 <div class="social">
                   <a href=""><i class="ri-twitter-fill"></i></a>
@@ -519,7 +438,9 @@
               <div class="pic"><img src='{% static "img/team/man.png" %}' class="img-fluid" alt=""></div>
               <div class="member-info">
                 <h4>이동희</h4>
-                <span>대구광역시센터 </span>
+                <span>2020 공공데이터 청년 인턴십
+                  <br>행안부/한국정보화진흥원 <br>대구광역시센터 직접사업 30팀</br>
+                </span>
                 <p>PPT 제작</p>
                 <div class="social">
                   <a href=""><i class="ri-twitter-fill"></i></a>
@@ -536,7 +457,9 @@
               <div class="pic"><img src='{% static "img/team/man.png" %}' class="img-fluid" alt=""></div>
               <div class="member-info">
                 <h4>이지현</h4>
-                <span>서울</span>
+                <span>2020 공공데이터 청년 인턴십
+                  <br>서울2센터 은평소방서</br>
+                </span>
                 <p>기획서 작성</p>
                 <div class="social">
                   <a href=""><i class="ri-twitter-fill"></i></a>
@@ -553,7 +476,9 @@
               <div class="pic"><img src='{% static "img/team/man.png" %}' class="img-fluid" alt=""></div>
               <div class="member-info">
                 <h4>홍지현</h4>
-                <span>인천 부평소방서 소속</span>
+                <span>2020 공공데이터 청년 인턴십
+                  <br>인천광역시센터 계양구청</br>
+                </span>
                 <p>데이터 시각화</p>
                 <div class="social">
                   <a href=""><i class="ri-twitter-fill"></i></a>
@@ -571,79 +496,6 @@
     </section><!-- End Team Section -->
 
 
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Contact</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        </div>
-
-        <div class="row">
-
-          <div class="col-lg-5 d-flex align-items-stretch">
-            <div class="info">
-              <div class="address">
-                <i class="icofont-google-map"></i>
-                <h4>Location:</h4>
-                <p>A108 Adam Street, New York, NY 535022</p>
-              </div>
-
-              <div class="email">
-                <i class="icofont-envelope"></i>
-                <h4>Email:</h4>
-                <p>info@example.com</p>
-              </div>
-
-              <div class="phone">
-                <i class="icofont-phone"></i>
-                <h4>Call:</h4>
-                <p>+1 5589 55488 55s</p>
-              </div>
-
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
-            </div>
-
-          </div>
-
-          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="form-row">
-                <div class="form-group col-md-6">
-                  <label for="name">Your Name</label>
-                  <input type="text" name="name" class="form-control" id="name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                  <div class="validate"></div>
-                </div>
-                <div class="form-group col-md-6">
-                  <label for="name">Your Email</label>
-                  <input type="email" class="form-control" name="email" id="email" data-rule="email" data-msg="Please enter a valid email" />
-                  <div class="validate"></div>
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="name">Subject</label>
-                <input type="text" class="form-control" name="subject" id="subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                <div class="validate"></div>
-              </div>
-              <div class="form-group">
-                <label for="name">Message</label>
-                <textarea class="form-control" name="message" rows="10" data-rule="required" data-msg="Please write something for us"></textarea>
-                <div class="validate"></div>
-              </div>
-              <div class="mb-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Contact Section -->
 
   </main><!-- End #main -->
 
@@ -727,6 +579,25 @@
 
   <!-- Template Main JS File -->
   <script src='{% static "js/main.js" %}'></script>
+  <!--  파이차트-->
+  <script>
+    //pie
+    var ctxP = document.getElementById("pieChart").getContext('2d');
+    var myPieChart = new Chart(ctxP, {
+    type: 'pie',
+    data: {
+    labels: ["매우 신뢰하지않음", "신뢰하지않음", "보통", "신뢰", "매우 신뢰"],
+    datasets: [{
+    data: [19, 36, 34, 8, 4],
+    backgroundColor: ["#F7464A", "#FDB45C", "#46BFBD", "#949FB1", "#4D5360"],
+    hoverBackgroundColor: ["#FF5A5E", "#FFC870", "#5AD3D1", "#A8B3C5", "#616774"]
+    }]
+    },
+    options: {
+    responsive: true
+    }
+    });
+  </script>
 
 </body>
 
