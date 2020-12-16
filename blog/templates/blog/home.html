@@ -49,6 +49,13 @@
       transition: top 0.2s ease-in-out;
     }
 
+    img {
+    width: auto;
+    height: auto;
+    max-width: 1000px;
+    max-height: 1000px;
+    object-fit: cover;
+    }
 
   </style>
 
@@ -164,6 +171,11 @@
     <!-- ======= Portfolio Section ======= -->
     <section id="portfolio" class="portfolio">
       <div class="container" data-aos="fade-up">
+
+        <div class="section-title" data-aos="fade-right" data-aos-delay="100">
+          <img src='{% static "img/bonus.jpg" %}' class="img" alt="">
+        </div>
+<br><br><br><br><br><br><br><br>
         <div class="section-title">
           <h2>전국수질지도</h2>
           <p> 전국수질지도는 전국 약수터 수질현황, 전국 상수도 수질 현황을 볼수 있도록 구성하였고
@@ -172,8 +184,6 @@
         <ul id="portfolio-flters" class="d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
           <li data-filter="*" class="filter-active">전국수질지도</li>
 <!--          <li data-filter=".filter-app">전국 물 맛집 탐방</li>-->
-<!--          <li data-filter=".filter-card">전국 약수터 현황</li>-->
-<!--          <li data-filter=".filter-web">우리동네 약수터는?</li>-->
         </ul>
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
@@ -181,10 +191,6 @@
           </div>
         </div>
 
-        <p>물맛집 api 출처: 공공데이터포털 전국상수도수질검사표준데이터 (업데이트 주기: 월) </p>
-        <p>전국의 정수장의 수질정보 입니다.</p><br>
-        <p>약수터 데이터터 출처: 공공이터포털 전국먹는물공동시설(약수터)표준데이터 (업데이트 주기: 월) </p>
-        <p>전국의 정수장의 수질정보 입니다.</p>
 
       </div>
      </section>
