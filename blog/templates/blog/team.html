@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>수(水)리수리 정(淨)수리</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href='{% static "img/icon.png" %}' rel="icon">
+  <link href='{% static "img/apple-touch-icon.png" %}' rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Noto+Sans+KR:wght@700&display=swap');
+    p{
+    font-size: 1.4em;
+    font-family: 'Do Hyeon', sans-serif;
+    }
+    p1{
+    font-size: 1.4em;
+    font-family: 'Do Hyeon', sans-serif;
+    }
+    p3{
+    font-family: 'Do Hyeon', sans-serif;
+    }
+    p2{
+    font-family: 'Do Hyeon', sans-serif;
+    }
+    ul {
+      line-height: 30px;
+      vertical-align: middle;
+    }
+
+
+    header {
+      margin: 0;
+      padding: 10px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 70px;
+      transition: top 0.2s ease-in-out;
+    }
+
+
+  </style>
+
+
+  <!-- Vendor CSS Files -->
+  <link href='{% static "vendor/bootstrap/css/bootstrap.min.css" %}' rel="stylesheet">
+  <link href='{% static "vendor/icofont/icofont.min.css" %}' rel="stylesheet">
+  <link href='{% static "vendor/boxicons/css/boxicons.min.css" %}' rel="stylesheet">
+  <link href='{% static "vendor/remixicon/remixicon.css" %}' rel="stylesheet">
+  <link href='{% static "vendor/venobox/venobox.css" %}' rel="stylesheet">
+  <link href='{% static "vendor/owl.carousel/assets/owl.carousel.min.css" %}' rel="stylesheet">
+  <link href='{% static "vendor/aos/aos.css" %}' rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href='{% static "css/style.css" %}' rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Arsha - v2.2.1
+  * Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top header-inner-pages">
+    <div class="container d-flex align-items-center">
+
+      <h3 class="logo mr-auto"><a href='{% url 'home' %}' ><p style="font-family: 'Do Hyeon', sans-serif;">수(水)리수리 정(淨)수리</p></a></h3>
+      <!-- Uncomment below if you prefer to use an image logo -->
+       <a href="home.html" class="logo mr-auto"><img src='{% static "img/logo.png" %}' alt="" class="img-fluid"></a>
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="active"><a href='{% url 'home' %}'><p>전국수질지도</p></a></li>
+          <li><a href='{% url 'intro' %}'><p>개요</p></a></li>
+          <li><a href='{% url 'emojomo' %}'><p>水돗물 이모저모</p></a></li>
+          <li><a href='{% url 'team' %}'><p>팀 포세이돈</p></a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+
+      <p><a href="#portfolio" class="get-started-btn scrollto">시작하기</a></p>
+
+    </div>
+  </header>
+  <!-- End Header -->
+
+
+  <main id="main">
+
+
+
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+        <ol>
+          <li><a href="index.html">홈</a></li>
+          <li>팀 포세이돈</li>
+        </ol>
+        <h2>팀 포세이돈 소개</h2>
+      </div>
+    </section>
+    <!-- End Breadcrumbs -->
+
+
+
+<!--    <section class="inner-page">-->
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>팀 포세이돈</h2>
+          <p> 수리수리 정수리 프로젝트는 이런 분들이 함께 의기투합하여 제작하였습니다.</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-6">
+            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="100">
+              <div class="pic"><img src='{% static "img/team/me.png" %}' class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>권다연</h4>
+                <span>2020 공공데이터 청년 인턴십
+                  <br>행안부/한국정보화진흥원 <br>대구광역시센터 직접사업 23팀</br>
+                </span>
+                <p3>데이터 분석</p3>
+                <div class="social">
+                  <a href="https://www.instagram.com/datainterndt/"><i class="ri-instagram-fill"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-6 mt-4 mt-lg-0">
+            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="200">
+              <div class="pic"><img src='{% static "img/team/man.png" %}' class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>김나현</h4>
+                <span>2020 공공데이터 청년 인턴십
+                  <br>행안부/한국정보화진흥원 <br>대구광역시센터 직접사업 20팀</br>
+                </span>
+               <p3>개발</p3>
+                <div class="social">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4">
+            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="300">
+              <div class="pic"><img src='{% static "img/team/yeahrim.png" %}' class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>양예림</h4>
+                <span>2020 공공데이터 청년 인턴십
+                  <br>경상남도센터 거제해양관광공사</br>
+                </span>
+                <p3>기획 및 디자인</p3>
+                <div class="social">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4">
+            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="300">
+              <div class="pic"><img src='{% static "img/team/donghee.png" %}' class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>이동희</h4>
+                <span>2020 공공데이터 청년 인턴십
+                  <br>행안부/한국정보화진흥원 <br>대구광역시센터 직접사업 30팀</br>
+                </span>
+                <p3>기획 및 디자인</p3>
+                <div class="social">
+                  <a href="https://www.instagram.com/louis_vuiddonghee/"><i class="ri-instagram-fill"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+           <div class="col-lg-6 mt-4">
+            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="300">
+              <div class="pic"><img src='{% static "img/team/seoulji.png" %}' class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>이지현</h4>
+                <span>2020 공공데이터 청년 인턴십
+                  <br>서울2센터 은평소방서</br>
+                </span>
+                <p3>기획 및 디자인, 밥아저씨</p3>
+                <div class="social">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4">
+            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="400">
+              <div class="pic"><img src='{% static "img/team/incheonji.png" %}' class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>홍지현</h4>
+                <span>2020 공공데이터 청년 인턴십
+                  <br>인천광역시센터 계양구청</br>
+                </span>
+                <p3>데이터 시각화</p3>
+                <div class="social">
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- End Team Section -->
+
+    </section>
+
+
+  </main><!-- End #main -->
+
+
+
+
+
+
+
+
+
+
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-newsletter">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <h4>오늘은 인턴십으로! 내일은 리더십으로!</h4>
+            <p>2020 공공데이터 청년인턴십을 통해<br>저희 팀 포세이돈은 꿈을 향해 도약합니다.</p>
+<!--            <form action="" method="post">-->
+<!--              <input type="email" name="email"><input type="submit" value="Subscribe">-->
+<!--            </form>-->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>포세이돈</h3>
+            <p>
+              대구광역시 중구 태평로 160<br>
+              대구스테이션센터 6층 <br><br>
+              <strong>Email:</strong> dt2002477@dt20gw.hyosungitx.com<br>
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>행정안전부</h3>
+            <p>
+              (세종)세종특별자치시 정부2청사로 13<br>
+              (서울)서울특별시 종로구 세종대로 209<br>
+              <br><strong>콜센터:</strong> 02-2100-3399<br>
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>한국정보화진흥원</h3>
+            <p>
+              (본사)대구광역시 동구 첨단로 53<br>
+              (서울)서울특별시 중구 청계천로 14<br><br>
+              <strong>대표전화: </strong>053-230-1114<br>
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>효성ITX</h3>
+            <p>
+              (본사)서울특별시 영등포구 선유동2로 57<br>
+              (대전)대전광역시 서구 대덕대로 319<br>
+              <br><strong>대표전화:</strong> 02-2102-8400<br>
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>SNS</h4>
+            <p2>Our Social Network Service</p2>
+            <div class="social-links mt-3">
+              <a href="https://youtu.be/BN2q9Wfo89A" class="youtube"><i class="bx bxl-youtube"></i></a>
+              <a href="https://www.instagram.com/datainterndt/" class="instagram"><i class="bx bxl-instagram"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom clearfix">
+      <div class="copyright">
+        &copy; Copyright <strong><span>포세이돈</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top"><i class="ri-arrow-up-line"></i></a>
+  <div id="preloader"></div>
+
+
+  <!-- Vendor JS Files -->
+  <script src='{% static "vendor/jquery/jquery.min.js" %}'></script>
+  <script src='{% static "vendor/bootstrap/js/bootstrap.bundle.min.js" %}'></script>
+  <script src='{% static "vendor/jquery.easing/jquery.easing.min.js" %}'></script>
+  <script src='{% static "vendor/php-email-form/validate.js" %}'></script>
+  <script src='{% static "vendor/waypoints/jquery.waypoints.min.js" %}'></script>
+  <script src='{% static "vendor/isotope-layout/isotope.pkgd.min.js" %}'></script>
+  <script src='{% static "vendor/venobox/venobox.min.js" %}'></script>
+  <script src='{% static "vendor/owl.carousel/owl.carousel.min.js" %}'></script>
+  <script src='{% static "vendor/aos/aos.js" %}'></script>
+
+  <!-- Template Main JS File -->
+  <script src='{% static "js/main.js" %}'></script>
+  <!--  상단 네비게이션 자동 숨김-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+
+  <script>
+
+
+  </script>
+
+
+
+
+</body>
+
+</html>

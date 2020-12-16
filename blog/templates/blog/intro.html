@@ -79,16 +79,15 @@
   <header id="header" class="fixed-top header-inner-pages">
     <div class="container d-flex align-items-center">
 
-      <h3 class="logo mr-auto"><a href="#hero" ><p style="font-family: 'Do Hyeon', sans-serif;">수(水)리수리 정(淨)수리</p></a></h3>
+      <h3 class="logo mr-auto"><a href='{% url 'home' %}' ><p style="font-family: 'Do Hyeon', sans-serif;">수(水)리수리 정(淨)수리</p></a></h3>
       <!-- Uncomment below if you prefer to use an image logo -->
        <a href="home.html" class="logo mr-auto"><img src='{% static "img/logo.png" %}' alt="" class="img-fluid"></a>
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-          <li class="active"><a href='{% url 'home' %}'><p>홈</p></a></li>
-          <li><a href="#portfolio"><p>전국수질지도</p></a></li>
+          <li class="active"><a href='{% url 'home' %}'><p>전국수질지도</p></a></li>
           <li><a href='{% url 'intro' %}'><p>개요</p></a></li>
-          <li><a href='{% url 'emojomo' %}'><p>이모저모</p></a></li>
-          <li><a href="#team"><p>팀 포세이돈</p></a></li>
+          <li><a href='{% url 'emojomo' %}'><p>水돗물 이모저모</p></a></li>
+          <li><a href='{% url 'team' %}'><p>팀 포세이돈</p></a></li>
         </ul>
       </nav><!-- .nav-menu -->
 
@@ -105,7 +104,7 @@
       <div class="container">
 
         <ol>
-          <li><a href="index.html">홈</a></li>
+          <li><a href='{% url 'home' %}'>홈</a></li>
           <li>개요</li>
         </ol>
         <h2>프로젝트 개요</h2>
@@ -282,7 +281,7 @@
             </p>
           </div>
           <div class="col-lg-3 cta-btn-container text-center" data-aos="fade-up">
-            <a class="cta-btn align-middle" href="#team" data-aos="fade-up">다음으로 넘어가기</a>
+            <a class="cta-btn align-middle" href="#services" data-aos="fade-up">다음으로 넘어가기</a>
           </div>
         </div>
 
@@ -349,72 +348,59 @@
   <!-- ======= Footer ======= -->
   <footer id="footer">
 
-    <div class="footer-newsletter">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-6">
-            <h4>오늘은 인턴십으로! 내일은 리더십으로!</h4>
-            <p>2020 공공데이터 청년인턴십을 통해<br>저희 팀 포세이돈은 꿈을 향해 도약합니다.</p>
-<!--            <form action="" method="post">-->
-<!--              <input type="email" name="email"><input type="submit" value="Subscribe">-->
-<!--            </form>-->
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
+<!--    <div class="footer-top">-->
+<!--      <div class="container">-->
+<!--        <div class="row">-->
 
-          <div class="col-lg-3 col-md-6 footer-contact">
-            <h3>포세이돈</h3>
-            <p>
-              대구광역시 중구 태평로 160<br>
-              대구스테이션센터 6층 <br><br>
-              <strong>Email:</strong> dt2002477@dt20gw.hyosungitx.com<br>
-            </p>
-          </div>
+<!--          <div class="col-lg-3 col-md-6 footer-contact">-->
+<!--            <h3>포세이돈</h3>-->
+<!--            <p>-->
+<!--              대구광역시 중구 태평로 160<br>-->
+<!--              대구스테이션센터 6층 <br><br>-->
+<!--              <strong>Email:</strong> dt2002477@dt20gw.hyosungitx.com<br>-->
+<!--            </p>-->
+<!--          </div>-->
 
-          <div class="col-lg-3 col-md-6 footer-contact">
-            <h3>행정안전부</h3>
-            <p>
-              (세종)세종특별자치시 정부2청사로 13<br>
-              (서울)서울특별시 종로구 세종대로 209<br>
-              <br><strong>콜센터:</strong> 02-2100-3399<br>
-            </p>
-          </div>
+<!--          <div class="col-lg-3 col-md-6 footer-contact">-->
+<!--            <h3>행정안전부</h3>-->
+<!--            <p>-->
+<!--              (세종)세종특별자치시 정부2청사로 13<br>-->
+<!--              (서울)서울특별시 종로구 세종대로 209<br>-->
+<!--              <br><strong>콜센터:</strong> 02-2100-3399<br>-->
+<!--            </p>-->
+<!--          </div>-->
 
-          <div class="col-lg-3 col-md-6 footer-contact">
-            <h3>한국정보화진흥원</h3>
-            <p>
-              (본사)대구광역시 동구 첨단로 53<br>
-              (서울)서울특별시 중구 청계천로 14<br><br>
-              <strong>대표전화: </strong>053-230-1114<br>
-            </p>
-          </div>
+<!--          <div class="col-lg-3 col-md-6 footer-contact">-->
+<!--            <h3>한국정보화진흥원</h3>-->
+<!--            <p>-->
+<!--              (본사)대구광역시 동구 첨단로 53<br>-->
+<!--              (서울)서울특별시 중구 청계천로 14<br><br>-->
+<!--              <strong>대표전화: </strong>053-230-1114<br>-->
+<!--            </p>-->
+<!--          </div>-->
 
-          <div class="col-lg-3 col-md-6 footer-contact">
-            <h3>효성ITX</h3>
-            <p>
-              (본사)서울특별시 영등포구 선유동2로 57<br>
-              (대전)대전광역시 서구 대덕대로 319<br>
-              <br><strong>대표전화:</strong> 02-2102-8400<br>
-            </p>
-          </div>
+<!--          <div class="col-lg-3 col-md-6 footer-contact">-->
+<!--            <h3>효성ITX</h3>-->
+<!--            <p>-->
+<!--              (본사)서울특별시 영등포구 선유동2로 57<br>-->
+<!--              (대전)대전광역시 서구 대덕대로 319<br>-->
+<!--              <br><strong>대표전화:</strong> 02-2102-8400<br>-->
+<!--            </p>-->
+<!--          </div>-->
 
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>SNS</h4>
-            <p2>Our Social Network Service</p2>
-            <div class="social-links mt-3">
-              <a href="https://youtu.be/BN2q9Wfo89A" class="youtube"><i class="bx bxl-youtube"></i></a>
-              <a href="https://www.instagram.com/datainterndt/" class="instagram"><i class="bx bxl-instagram"></i></a>
-            </div>
-          </div>
+<!--          <div class="col-lg-3 col-md-6 footer-links">-->
+<!--            <h4>SNS</h4>-->
+<!--            <p2>Our Social Network Service</p2>-->
+<!--            <div class="social-links mt-3">-->
+<!--              <a href="https://youtu.be/BN2q9Wfo89A" class="youtube"><i class="bx bxl-youtube"></i></a>-->
+<!--              <a href="https://www.instagram.com/datainterndt/" class="instagram"><i class="bx bxl-instagram"></i></a>-->
+<!--            </div>-->
+<!--          </div>-->
 
-        </div>
-      </div>
-    </div>
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
 
     <div class="container footer-bottom clearfix">
       <div class="copyright">

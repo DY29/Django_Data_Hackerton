@@ -45,12 +45,13 @@
       top: 0;
       left: 0;
       width: 100%;
-      height: 55px;
+      height: 60px;
       transition: top 0.2s ease-in-out;
     }
 
 
   </style>
+
 
 
   <!-- Vendor CSS Files -->
@@ -79,16 +80,15 @@
   <header id="header" class="fixed-top ">
     <div class="container d-flex align-items-center">
 
-      <h3 class="logo mr-auto"><a href="#hero" ><p style="font-family: 'Do Hyeon', sans-serif;">수(水)리수리 정(淨)수리</p></a></h3>
+      <h3 class="logo mr-auto"><a href='{% url 'home' %}' ><p style="font-family: 'Do Hyeon', sans-serif;">수(水)리수리 정(淨)수리</p></a></h3>
       <!-- Uncomment below if you prefer to use an image logo -->
        <a href="home.html" class="logo mr-auto"><img src='{% static "img/logo.png" %}' alt="" class="img-fluid"></a>
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-          <li class="active"><a href="#hero"><p>홈</p></a></li>
-          <li><a href="#portfolio"><p>전국수질지도</p></a></li>
+          <li class="active"><a href='{% url 'home' %}'><p>전국수질지도</p></a></li>
           <li><a href='{% url 'intro' %}'><p>개요</p></a></li>
-          <li><a href='{% url 'emojomo' %}'><p>이모저모</p></a></li>
-          <li><a href="#team"><p>팀 포세이돈</p></a></li>
+          <li><a href='{% url 'emojomo' %}'><p>水돗물 이모저모</p></a></li>
+          <li><a href='{% url 'team' %}'><p>팀 포세이돈</p></a></li>
         </ul>
       </nav><!-- .nav-menu -->
 
@@ -179,13 +179,13 @@
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <iframe src="https://public.tableau.com/views/_v1_9_16074518388790/sheet6?:language=ko&:display_count=y&publish=yes&:origin=viz_share_link?:showVizHome=no&:embed=true" width="1005" height="832"></iframe>
           </div>
-<!--          <div class="col-lg-4 col-md-6 portfolio-item filter-card">-->
-<!--            <iframe src="https://public.tableau.com/views/_v1_9_16074518388790/sheet4?:language=ko&:display_count=y&publish=yes&:origin=viz_share_link?:showVizHome=no&:embed=true" width="1005" height="832"></iframe>-->
-<!--          </div>-->
-<!--          <div class="col-lg-4 col-md-6 portfolio-item filter-web">-->
-<!--            <iframe src="https://public.tableau.com/views/_v1_9_16074518388790/sheet5?:language=ko&:display_count=y&publish=yes&:origin=viz_share_link?:showVizHome=no&:embed=true" width="1005" height="832"></iframe>-->
-<!--          </div>-->
         </div>
+
+        <p>물맛집 api 출처: 공공데이터포털 전국상수도수질검사표준데이터 (업데이트 주기: 월) </p>
+        <p>전국의 정수장의 수질정보 입니다.</p><br>
+        <p>약수터 데이터터 출처: 공공이터포털 전국먹는물공동시설(약수터)표준데이터 (업데이트 주기: 월) </p>
+        <p>전국의 정수장의 수질정보 입니다.</p>
+
       </div>
      </section>
     <!-- End Portfolio Section -->
@@ -197,113 +197,113 @@
 
 
     <!-- ======= Team Section ======= -->
-    <section id="team" class="team section-bg">
-      <div class="container" data-aos="fade-up">
+<!--    <section id="team" class="team section-bg">-->
+<!--      <div class="container" data-aos="fade-up">-->
 
-        <div class="section-title">
-          <h2>팀 포세이돈</h2>
-          <p> 수리수리 정수리 프로젝트는 이런 분들이 함께 의기투합하여 제작하였습니다.</p>
-        </div>
+<!--        <div class="section-title">-->
+<!--          <h2>팀 포세이돈</h2>-->
+<!--          <p> 수리수리 정수리 프로젝트는 이런 분들이 함께 의기투합하여 제작하였습니다.</p>-->
+<!--        </div>-->
 
-        <div class="row">
+<!--        <div class="row">-->
 
-          <div class="col-lg-6">
-            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="100">
-              <div class="pic"><img src='{% static "img/team/me.png" %}' class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>권다연</h4>
-                <span>2020 공공데이터 청년 인턴십
-                  <br>행안부/한국정보화진흥원 <br>대구광역시센터 직접사업 23팀</br>
-                </span>
-                <p3>데이터 분석</p3>
-                <div class="social">
-                  <a href="https://www.instagram.com/datainterndt/"><i class="ri-instagram-fill"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
+<!--          <div class="col-lg-6">-->
+<!--            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="100">-->
+<!--              <div class="pic"><img src='{% static "img/team/me.png" %}' class="img-fluid" alt=""></div>-->
+<!--              <div class="member-info">-->
+<!--                <h4>권다연</h4>-->
+<!--                <span>2020 공공데이터 청년 인턴십-->
+<!--                  <br>행안부/한국정보화진흥원 <br>대구광역시센터 직접사업 23팀</br>-->
+<!--                </span>-->
+<!--                <p3>데이터 분석</p3>-->
+<!--                <div class="social">-->
+<!--                  <a href="https://www.instagram.com/datainterndt/"><i class="ri-instagram-fill"></i></a>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
 
 
-          <div class="col-lg-6 mt-4 mt-lg-0">
-            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="200">
-              <div class="pic"><img src='{% static "img/team/man.png" %}' class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>김나현</h4>
-                <span>2020 공공데이터 청년 인턴십
-                  <br>행안부/한국정보화진흥원 <br>대구광역시센터 직접사업 20팀</br>
-                </span>
-               <p3>개발</p3>
-                <div class="social">
-                </div>
-              </div>
-            </div>
-          </div>
+<!--          <div class="col-lg-6 mt-4 mt-lg-0">-->
+<!--            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="200">-->
+<!--              <div class="pic"><img src='{% static "img/team/man.png" %}' class="img-fluid" alt=""></div>-->
+<!--              <div class="member-info">-->
+<!--                <h4>김나현</h4>-->
+<!--                <span>2020 공공데이터 청년 인턴십-->
+<!--                  <br>행안부/한국정보화진흥원 <br>대구광역시센터 직접사업 20팀</br>-->
+<!--                </span>-->
+<!--               <p3>개발</p3>-->
+<!--                <div class="social">-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
 
-          <div class="col-lg-6 mt-4">
-            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="300">
-              <div class="pic"><img src='{% static "img/team/yeahrim.png" %}' class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>양예림</h4>
-                <span>2020 공공데이터 청년 인턴십
-                  <br>경상남도센터 거제해양관광공사</br>
-                </span>
-                <p3>기획 및 디자인</p3>
-                <div class="social">
-                </div>
-              </div>
-            </div>
-          </div>
+<!--          <div class="col-lg-6 mt-4">-->
+<!--            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="300">-->
+<!--              <div class="pic"><img src='{% static "img/team/yeahrim.png" %}' class="img-fluid" alt=""></div>-->
+<!--              <div class="member-info">-->
+<!--                <h4>양예림</h4>-->
+<!--                <span>2020 공공데이터 청년 인턴십-->
+<!--                  <br>경상남도센터 거제해양관광공사</br>-->
+<!--                </span>-->
+<!--                <p3>기획 및 디자인</p3>-->
+<!--                <div class="social">-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
 
-          <div class="col-lg-6 mt-4">
-            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="300">
-              <div class="pic"><img src='{% static "img/team/donghee.png" %}' class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>이동희</h4>
-                <span>2020 공공데이터 청년 인턴십
-                  <br>행안부/한국정보화진흥원 <br>대구광역시센터 직접사업 30팀</br>
-                </span>
-                <p3>기획 및 디자인</p3>
-                <div class="social">
-                  <a href="https://www.instagram.com/louis_vuiddonghee/"><i class="ri-instagram-fill"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
+<!--          <div class="col-lg-6 mt-4">-->
+<!--            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="300">-->
+<!--              <div class="pic"><img src='{% static "img/team/donghee.png" %}' class="img-fluid" alt=""></div>-->
+<!--              <div class="member-info">-->
+<!--                <h4>이동희</h4>-->
+<!--                <span>2020 공공데이터 청년 인턴십-->
+<!--                  <br>행안부/한국정보화진흥원 <br>대구광역시센터 직접사업 30팀</br>-->
+<!--                </span>-->
+<!--                <p3>기획 및 디자인</p3>-->
+<!--                <div class="social">-->
+<!--                  <a href="https://www.instagram.com/louis_vuiddonghee/"><i class="ri-instagram-fill"></i></a>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
 
-           <div class="col-lg-6 mt-4">
-            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="300">
-              <div class="pic"><img src='{% static "img/team/seoulji.png" %}' class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>이지현</h4>
-                <span>2020 공공데이터 청년 인턴십
-                  <br>서울2센터 은평소방서</br>
-                </span>
-                <p3>기획 및 디자인, 밥아저씨</p3>
-                <div class="social">
-                </div>
-              </div>
-            </div>
-          </div>
+<!--           <div class="col-lg-6 mt-4">-->
+<!--            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="300">-->
+<!--              <div class="pic"><img src='{% static "img/team/seoulji.png" %}' class="img-fluid" alt=""></div>-->
+<!--              <div class="member-info">-->
+<!--                <h4>이지현</h4>-->
+<!--                <span>2020 공공데이터 청년 인턴십-->
+<!--                  <br>서울2센터 은평소방서</br>-->
+<!--                </span>-->
+<!--                <p3>기획 및 디자인, 밥아저씨</p3>-->
+<!--                <div class="social">-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
 
-          <div class="col-lg-6 mt-4">
-            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="400">
-              <div class="pic"><img src='{% static "img/team/incheonji.png" %}' class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>홍지현</h4>
-                <span>2020 공공데이터 청년 인턴십
-                  <br>인천광역시센터 계양구청</br>
-                </span>
-                <p3>데이터 시각화</p3>
-                <div class="social">
-                </div>
-              </div>
-            </div>
-          </div>
+<!--          <div class="col-lg-6 mt-4">-->
+<!--            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="400">-->
+<!--              <div class="pic"><img src='{% static "img/team/incheonji.png" %}' class="img-fluid" alt=""></div>-->
+<!--              <div class="member-info">-->
+<!--                <h4>홍지현</h4>-->
+<!--                <span>2020 공공데이터 청년 인턴십-->
+<!--                  <br>인천광역시센터 계양구청</br>-->
+<!--                </span>-->
+<!--                <p3>데이터 시각화</p3>-->
+<!--                <div class="social">-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
 
-        </div>
+<!--        </div>-->
 
-      </div>
-    </section>
+<!--      </div>-->
+<!--    </section>-->
     <!-- End Team Section -->
 
 
@@ -314,70 +314,70 @@
   <!-- ======= Footer ======= -->
   <footer id="footer">
 
-    <div class="footer-newsletter">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-6">
-            <h4>오늘은 인턴십으로! 내일은 리더십으로!</h4>
-            <p>2020 공공데이터 청년인턴십을 통해<br>저희 팀 포세이돈은 꿈을 향해 도약합니다.</p>
-<!--            <form action="" method="post">-->
-<!--              <input type="email" name="email"><input type="submit" value="Subscribe">-->
-<!--            </form>-->
-          </div>
-        </div>
-      </div>
-    </div>
+<!--    <div class="footer-newsletter">-->
+<!--      <div class="container">-->
+<!--        <div class="row justify-content-center">-->
+<!--          <div class="col-lg-6">-->
+<!--            <h4>오늘은 인턴십으로! 내일은 리더십으로!</h4>-->
+<!--            <p>2020 공공데이터 청년인턴십을 통해<br>저희 팀 포세이돈은 꿈을 향해 도약합니다.</p>-->
+<!--&lt;!&ndash;            <form action="" method="post">&ndash;&gt;-->
+<!--&lt;!&ndash;              <input type="email" name="email"><input type="submit" value="Subscribe">&ndash;&gt;-->
+<!--&lt;!&ndash;            </form>&ndash;&gt;-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
 
     <div class="footer-top">
       <div class="container">
-        <div class="row">
+<!--        <div class="row">-->
 
-          <div class="col-lg-3 col-md-6 footer-contact">
-            <h3>포세이돈</h3>
-            <p>
-              대구광역시 중구 태평로 160<br>
-              대구스테이션센터 6층 <br><br>
-              <strong>Email:</strong> dt2002477@dt20gw.hyosungitx.com<br>
-            </p>
-          </div>
+<!--          <div class="col-lg-3 col-md-6 footer-contact">-->
+<!--            <h3>포세이돈</h3>-->
+<!--            <p>-->
+<!--              대구광역시 중구 태평로 160<br>-->
+<!--              대구스테이션센터 6층 <br><br>-->
+<!--              <strong>Email:</strong> dt2002477@dt20gw.hyosungitx.com<br>-->
+<!--            </p>-->
+<!--          </div>-->
 
-          <div class="col-lg-3 col-md-6 footer-contact">
-            <h3>행정안전부</h3>
-            <p>
-              (세종)세종특별자치시 정부2청사로 13<br>
-              (서울)서울특별시 종로구 세종대로 209<br>
-              <br><strong>콜센터:</strong> 02-2100-3399<br>
-            </p>
-          </div>
+<!--          <div class="col-lg-3 col-md-6 footer-contact">-->
+<!--            <h3>행정안전부</h3>-->
+<!--            <p>-->
+<!--              (세종)세종특별자치시 정부2청사로 13<br>-->
+<!--              (서울)서울특별시 종로구 세종대로 209<br>-->
+<!--              <br><strong>콜센터:</strong> 02-2100-3399<br>-->
+<!--            </p>-->
+<!--          </div>-->
 
-          <div class="col-lg-3 col-md-6 footer-contact">
-            <h3>한국정보화진흥원</h3>
-            <p>
-              (본사)대구광역시 동구 첨단로 53<br>
-              (서울)서울특별시 중구 청계천로 14<br><br>
-              <strong>대표전화: </strong>053-230-1114<br>
-            </p>
-          </div>
+<!--          <div class="col-lg-3 col-md-6 footer-contact">-->
+<!--            <h3>한국정보화진흥원</h3>-->
+<!--            <p>-->
+<!--              (본사)대구광역시 동구 첨단로 53<br>-->
+<!--              (서울)서울특별시 중구 청계천로 14<br><br>-->
+<!--              <strong>대표전화: </strong>053-230-1114<br>-->
+<!--            </p>-->
+<!--          </div>-->
 
-          <div class="col-lg-3 col-md-6 footer-contact">
-            <h3>효성ITX</h3>
-            <p>
-              (본사)서울특별시 영등포구 선유동2로 57<br>
-              (대전)대전광역시 서구 대덕대로 319<br>
-              <br><strong>대표전화:</strong> 02-2102-8400<br>
-            </p>
-          </div>
+<!--          <div class="col-lg-3 col-md-6 footer-contact">-->
+<!--            <h3>효성ITX</h3>-->
+<!--            <p>-->
+<!--              (본사)서울특별시 영등포구 선유동2로 57<br>-->
+<!--              (대전)대전광역시 서구 대덕대로 319<br>-->
+<!--              <br><strong>대표전화:</strong> 02-2102-8400<br>-->
+<!--            </p>-->
+<!--          </div>-->
 
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>SNS</h4>
-            <p2>Our Social Network Service</p2>
-            <div class="social-links mt-3">
-              <a href="https://youtu.be/BN2q9Wfo89A" class="youtube"><i class="bx bxl-youtube"></i></a>
-              <a href="https://www.instagram.com/datainterndt/" class="instagram"><i class="bx bxl-instagram"></i></a>
-            </div>
-          </div>
+<!--          <div class="col-lg-3 col-md-6 footer-links">-->
+<!--            <h4>SNS</h4>-->
+<!--            <p2>Our Social Network Service</p2>-->
+<!--            <div class="social-links mt-3">-->
+<!--              <a href="https://youtu.be/BN2q9Wfo89A" class="youtube"><i class="bx bxl-youtube"></i></a>-->
+<!--              <a href="https://www.instagram.com/datainterndt/" class="instagram"><i class="bx bxl-instagram"></i></a>-->
+<!--            </div>-->
+<!--          </div>-->
 
-        </div>
+<!--        </div>-->
       </div>
     </div>
 

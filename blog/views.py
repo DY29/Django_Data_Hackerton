@@ -10,3 +10,6 @@ def intro(request):
 
 def emojomo(request):
     return render(request, 'blog/emojomo.html', {})
+
+def team(request):
+    return render(request, 'blog/team.html', {})
