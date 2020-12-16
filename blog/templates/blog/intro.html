@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>수(水)리수리 정(淨)수리</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href='{% static "img/icon.png" %}' rel="icon">
+  <link href='{% static "img/apple-touch-icon.png" %}' rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Noto+Sans+KR:wght@700&display=swap');
+    p{
+    font-size: 1.4em;
+    font-family: 'Do Hyeon', sans-serif;
+    }
+    p1{
+    font-size: 1.4em;
+    font-family: 'Do Hyeon', sans-serif;
+    }
+    p3{
+    font-family: 'Do Hyeon', sans-serif;
+    }
+    p2{
+    font-family: 'Do Hyeon', sans-serif;
+    }
+    ul {
+      line-height: 30px;
+      vertical-align: middle;
+    }
+
+
+    header {
+      margin: 0;
+      padding: 10px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 70px;
+      transition: top 0.2s ease-in-out;
+    }
+
+
+  </style>
+
+
+  <!-- Vendor CSS Files -->
+  <link href='{% static "vendor/bootstrap/css/bootstrap.min.css" %}' rel="stylesheet">
+  <link href='{% static "vendor/icofont/icofont.min.css" %}' rel="stylesheet">
+  <link href='{% static "vendor/boxicons/css/boxicons.min.css" %}' rel="stylesheet">
+  <link href='{% static "vendor/remixicon/remixicon.css" %}' rel="stylesheet">
+  <link href='{% static "vendor/venobox/venobox.css" %}' rel="stylesheet">
+  <link href='{% static "vendor/owl.carousel/assets/owl.carousel.min.css" %}' rel="stylesheet">
+  <link href='{% static "vendor/aos/aos.css" %}' rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href='{% static "css/style.css" %}' rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Arsha - v2.2.1
+  * Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top header-inner-pages">
+    <div class="container d-flex align-items-center">
+
+      <h3 class="logo mr-auto"><a href="#hero" ><p style="font-family: 'Do Hyeon', sans-serif;">수(水)리수리 정(淨)수리</p></a></h3>
+      <!-- Uncomment below if you prefer to use an image logo -->
+       <a href="home.html" class="logo mr-auto"><img src='{% static "img/logo.png" %}' alt="" class="img-fluid"></a>
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="active"><a href='{% url 'home' %}'><p>홈</p></a></li>
+          <li><a href="#portfolio"><p>전국수질지도</p></a></li>
+          <li><a href='{% url 'intro' %}'><p>개요</p></a></li>
+          <li><a href='{% url 'emojomo' %}'><p>이모저모</p></a></li>
+          <li><a href="#team"><p>팀 포세이돈</p></a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+
+      <p><a href="#portfolio" class="get-started-btn scrollto">시작하기</a></p>
+
+    </div>
+  </header>
+  <!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <ol>
+          <li><a href="index.html">홈</a></li>
+          <li>개요</li>
+        </ol>
+        <h2>프로젝트 개요</h2>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+
+            <!-- ======= About Us Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>왜, 수돗물인가?</h2>
+        </div>
+
+        <div class="row content">
+          <div class="col-lg-6">
+            <p>
+              올 여름, 인천 일부 지역과 기타 다른 지역의 수돗물에서 깔따구 유충이 발견되었습니다.
+              이뿐 아니라 수도에서 붉은 물이 나오는 등, 깨끗하게 시민들에게 공급되어야 할 수돗물을 믿고 사용하지 못하는 여러 사건들이 었었습니다.
+
+            </p>
+            <ul>
+              <li><i class="ri-check-double-line"></i> 30년전 페놀 파동</li>
+              <li><i class="ri-check-double-line"></i> 수돗물 유충사태</li>
+              <li><i class="ri-check-double-line"></i> 붉은 수돗물</li>
+              <li><i class="ri-check-double-line"></i> 약수터에서 음용에 부적합한 성분 발견</li>
+
+            </ul>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0">
+            <p>
+              이러한 이유들로 인해 우리는 수돗물이 시민들에게 전달되기에 적합한 수준인지 파악하기 위해서 전국 수질지도를 제작하게 되었습니다.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- End About Us Section -->
+
+
+    <!-- ======= Why Us Section ======= -->
+    <section id="why-us" class="why-us section-bg">
+      <div class="container-fluid" data-aos="fade-up">
+        <div class="row">
+          <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
+            <div class="content">
+              <h3>수돗물에 대한 <strong>사람들의 인식</strong>을 살펴보았습니다.</h3>
+              <p3>
+                다음은 [인천광역시,「인천광역시사회조사」, 분야별 인천시의 사회안전 인식 수준,2019],<br>
+                [유해물질로부터 안전한 수돗물대구시민대책회, 대구 수돗물 신뢰 정도, 2018], <br>
+                [공공의창 대국민 수돗물 인식 여론 조사]의 연구조사 결과입니다.<br><br>
+              </p3>
+            </div>
+            <div class="accordion-list">
+              <ul>
+                <li>
+                  <a data-toggle="collapse" class="collapse" href="#accordion-list-1"><h4><span4>01</span4> 인천 환경오염(대기/수질 등) 인식 수준</h4><i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-1" class="collapse show" data-parent=".accordion-list">
+                    <p>
+                       「인천광역시사회조사」에 따르면 인천 시민 인구의 약 50%는 인천의 수질 및 대기질에 대해 불안해 하고 있다고 답했습니다.
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <a data-toggle="collapse" href="#accordion-list-2" class="collapsed"><h4><span4>02</span4> 대구시민 수돗물 신뢰 정도</h4><i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-2" class="collapse" data-parent=".accordion-list">
+                    <p>
+                       「대구 수돗물 신뢰 정도」에 따르면 대구 시민 인구의 약 55%가 대구 수돗물 수준에 대해 신뢰하고 있지 못하다고 답했습니다.
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <a data-toggle="collapse" href="#accordion-list-3" class="collapsed"><h4><span4>03</span4> 수돗물을 마시는 방법 </h4><i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-3" class="collapse" data-parent=".accordion-list">
+                    <p>
+                       「공공의창 대국민 수돗물 인식 여론 조사」에 따르면 전국 1000여명 중 수돗물을 직접 음용하는 인구는 16%에 불과 했고 48%는 수돗물을 보리차 등으로 끓여서 마시거나 요리에 사용한다고 답했습니다.<br>
+                       나머지 36%는 수돗물을 마시지 않는다고 답했습니다.
+                    </p>
+                  </div>
+                </li>
+
+              </ul>
+            </div>
+        </div>
+      </div>
+
+
+
+    </div>
+    </section>
+    <!-- End Why Us Section -->
+
+
+    <!-- ======= Skills Section ======= -->
+    <section id="skills" class="skills">
+      <div class="container" data-aos="fade-up">
+        <div class="row">
+          <div class="col-lg-6 d-flex align-items-center" data-aos="fade-right" data-aos-delay="100">
+            <img src='{% static "img/skills.png" %}' class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 content" data-aos="fade-left" data-aos-delay="100">
+            <h3> <strong>36%</strong>가 수돗물을 마시지 않는 이유는?</h3>
+            <p class="font-italic">
+              앞서 살펴본 「공공의창 대국민 수돗물 인식 여론 조사」에서 <br>"수돗물을 마시지 않는" 인구 36%에 대한 이유는 다음과 같았습니다.
+            </p>
+
+            <div class="skills-content">
+
+              <div class="progress">
+                <span class="skill">이물질이 나와서 <i class="val">25.2%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="38" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+
+              <div class="progress">
+                <span class="skill">막연한 불안감 <i class="val">21.8%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+
+              <div class="progress">
+                <span class="skill">정수시스템 신뢰불가 <i class="val">14.7%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+
+              <div class="progress">
+                <span class="skill">상수원이 깨끗하지 않아서 <i class="val">14.6%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="24" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+
+              <div class="progress">
+                <span class="skill">맛없어서 <i class="val">12.5%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="21" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+
+              <div class="progress">
+                <span class="skill">기타 <i class="val">11.2%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Skills Section -->
+
+
+        <!-- ======= Cta Section ======= -->
+    <section id="cta" class="cta">
+      <div class="container" data-aos="zoom-in">
+
+        <div class="row">
+          <div class="col-lg-9 text-center text-lg-left">
+            <h3>그래서?</h3>
+            <p> 생활에서 필수적인 물,
+                하지만 국민들의 인식은 불안하기만 하다!
+                <br>일상생활에서 흔히 쓰이는 수돗물과 약수물.
+                이제는 건강을 위해 알고 마셔야 합니다.
+            </p>
+          </div>
+          <div class="col-lg-3 cta-btn-container text-center" data-aos="fade-up">
+            <a class="cta-btn align-middle" href="#team" data-aos="fade-up">다음으로 넘어가기</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- End Cta Section -->
+
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>기대효과</h2>
+          <p> 따라서 우리는 전국에 있는 약수터 및 상수도의 수질 성분을 파악하고 수질 현황을 직접 볼 수 있는 지도를 제작함으로써 <br>다음과 같은 효과를 기대 할 수 있습니다.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bxl-dribbble"></i></div>
+              <h4><a href="">수질 검사<br>투명성 확보</a></h4>
+              <p1>수자원에 대한 관심이 고취되어 보다 투명한 수질 검사가 진행 될 수 있습니다.</p1>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-file"></i></div>
+              <h4><a href="">수자원에 대한 <br>신뢰도 상승</a></h4>
+              <p1>생명과 직결되는 수질에 대한 불안감이 해소되어 수자원의 <br>신뢰도 상승으로 연결될 수 있습니다.</p1>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-tachometer"></i></div>
+              <h4><a href="">환경보호 효과</a></h4>
+              <p1>수돗물 음용률 향상으로 인해 플라스틱 생수병 사용량이 감소 될 것입니다.</p1>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="400">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-layer"></i></div>
+              <h4><a href="">오염수 음용 방지</a></h4>
+              <p1>수돗물 직접 음용 및 약수터의 오염수 음용을 수(水)리수리 <br>정(淨)수리를 통해 미연에 방지할 수 있습니다.</p1>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- End Services Section -->
+
+
+
+
+
+  </main>
+  <!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-newsletter">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <h4>오늘은 인턴십으로! 내일은 리더십으로!</h4>
+            <p>2020 공공데이터 청년인턴십을 통해<br>저희 팀 포세이돈은 꿈을 향해 도약합니다.</p>
+<!--            <form action="" method="post">-->
+<!--              <input type="email" name="email"><input type="submit" value="Subscribe">-->
+<!--            </form>-->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>포세이돈</h3>
+            <p>
+              대구광역시 중구 태평로 160<br>
+              대구스테이션센터 6층 <br><br>
+              <strong>Email:</strong> dt2002477@dt20gw.hyosungitx.com<br>
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>행정안전부</h3>
+            <p>
+              (세종)세종특별자치시 정부2청사로 13<br>
+              (서울)서울특별시 종로구 세종대로 209<br>
+              <br><strong>콜센터:</strong> 02-2100-3399<br>
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>한국정보화진흥원</h3>
+            <p>
+              (본사)대구광역시 동구 첨단로 53<br>
+              (서울)서울특별시 중구 청계천로 14<br><br>
+              <strong>대표전화: </strong>053-230-1114<br>
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>효성ITX</h3>
+            <p>
+              (본사)서울특별시 영등포구 선유동2로 57<br>
+              (대전)대전광역시 서구 대덕대로 319<br>
+              <br><strong>대표전화:</strong> 02-2102-8400<br>
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>SNS</h4>
+            <p2>Our Social Network Service</p2>
+            <div class="social-links mt-3">
+              <a href="https://youtu.be/BN2q9Wfo89A" class="youtube"><i class="bx bxl-youtube"></i></a>
+              <a href="https://www.instagram.com/datainterndt/" class="instagram"><i class="bx bxl-instagram"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom clearfix">
+      <div class="copyright">
+        &copy; Copyright <strong><span>포세이돈</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top"><i class="ri-arrow-up-line"></i></a>
+  <div id="preloader"></div>
+
+
+  <!-- Vendor JS Files -->
+  <script src='{% static "vendor/jquery/jquery.min.js" %}'></script>
+  <script src='{% static "vendor/bootstrap/js/bootstrap.bundle.min.js" %}'></script>
+  <script src='{% static "vendor/jquery.easing/jquery.easing.min.js" %}'></script>
+  <script src='{% static "vendor/php-email-form/validate.js" %}'></script>
+  <script src='{% static "vendor/waypoints/jquery.waypoints.min.js" %}'></script>
+  <script src='{% static "vendor/isotope-layout/isotope.pkgd.min.js" %}'></script>
+  <script src='{% static "vendor/venobox/venobox.min.js" %}'></script>
+  <script src='{% static "vendor/owl.carousel/owl.carousel.min.js" %}'></script>
+  <script src='{% static "vendor/aos/aos.js" %}'></script>
+
+  <!-- Template Main JS File -->
+  <script src='{% static "js/main.js" %}'></script>
+  <!--  상단 네비게이션 자동 숨김-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+
+  <script>
+
+
+  </script>
+
+
+
+
+</body>
+
+</html>
