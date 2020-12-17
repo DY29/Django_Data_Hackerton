@@ -45,12 +45,21 @@
       top: 0;
       left: 0;
       width: 100%;
-      height: 70px;
+      height: 60px;
       transition: top 0.2s ease-in-out;
+    }
+
+    img {
+    width: auto;
+    height: auto;
+    max-width: 850px;
+    max-height: 850px;
+    object-fit: cover;
     }
 
 
   </style>
+
 
 
   <!-- Vendor CSS Files -->
@@ -76,41 +85,92 @@
 <body>
 
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top header-inner-pages">
+  <header id="header" class="fixed-top ">
     <div class="container d-flex align-items-center">
 
-      <h3 class="logo mr-auto"><a href='{% url 'home' %}' ><p style="font-family: 'Do Hyeon', sans-serif;">수(水)리수리 정(淨)수리</p></a></h3>
+      <h3 class="logo mr-auto"><a href='{% url 'map' %}' ><p style="font-family: 'Do Hyeon', sans-serif;">수(水)리수리 정(淨)수리</p></a></h3>
       <!-- Uncomment below if you prefer to use an image logo -->
        <a href="home.html" class="logo mr-auto"><img src='{% static "img/logo.png" %}' alt="" class="img-fluid"></a>
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-          <li class="active"><a href='{% url 'home' %}'><p>전국수질지도</p></a></li>
-          <li><a href='{% url 'intro' %}'><p>개요</p></a></li>
+          <li><a href='{% url 'map' %}'><p>전국수질지도</p></a></li>
+          <li class="active"><a href='{% url 'intro' %}'><p>프로젝트 개요</p></a></li>
           <li><a href='{% url 'emojomo' %}'><p>水돗물 이모저모</p></a></li>
           <li><a href='{% url 'team' %}'><p>팀 포세이돈</p></a></li>
         </ul>
       </nav><!-- .nav-menu -->
 
-      <p><a href="#portfolio" class="get-started-btn scrollto">시작하기</a></p>
+      <p><a href='{% url 'map' %}' class="get-started-btn scrollto">시작하기</a></p>
 
     </div>
   </header>
   <!-- End Header -->
 
+
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+
+    <div class="container">
+
+
+      <div class="row">
+        <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
+          <h1>물, 안심하고 마시자!</h1>
+          <h2>수돗물 수질 안심 확인 <br>수(水)리수리 정(淨)수리 프로젝트</h2>
+          <div class="d-lg-flex">
+            <a href='{% url 'map' %}' class="btn-get-started scrollto">시작하기</a>
+            <a href="https://youtu.be/BN2q9Wfo89A" class="venobox btn-watch-video" data-vbtype="video" data-autoplay="true"> 수(水)리수리 정(淨)수리 가이드 영상 보기 <i class="icofont-play-alt-2"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2 main" data-aos="zoom-in" data-aos-delay="200">
+          <img src='{% static "img/main.png" %}' class="img-fluid animated" alt="">
+        </div>
+      </div>
+
+  </section>
+  <!-- End Hero -->
+
   <main id="main">
 
-    <!-- ======= Breadcrumbs ======= -->
-    <section id="breadcrumbs" class="breadcrumbs">
+    <!-- ======= Cliens Section ======= -->
+    <section id="cliens" class="cliens section-bg">
       <div class="container">
 
-        <ol>
-          <li><a href='{% url 'home' %}'>홈</a></li>
-          <li>개요</li>
-        </ol>
-        <h2>프로젝트 개요</h2>
+        <div class="row" data-aos="zoom-in">
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src='{% static "img/clients/haengan-removebg.png" %}' class="img-fluid" alt="" style="max-width:100%; height:auto;">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src='{% static "img/clients/intership-removebg.png" %}' class="img-fluid" alt="" style="max-width:100%; height:auto;">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src='{% static "img/clients/sum-removebg.png" %}' class="img-fluid" alt="" style="max-width:100%; height:auto;">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src='{% static "img/clients/koreadata-removebg.png" %}' class="img-fluid" alt="" style="max-width:100%; height:auto;">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src='{% static "img/clients/hackerton-removebg.png" %}' class="img-fluid" alt="" style="max-width:100%; height:auto;">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src='{% static "img/clients/hackerton2-removebg.png" %}' class="img-fluid" alt="" style="max-width:100%; height:auto;">
+          </div>
+
+        </div>
 
       </div>
-    </section><!-- End Breadcrumbs -->
+    </section>
+    <!-- End Cliens Section -->
+
+
+
 
 
             <!-- ======= About Us Section ======= -->

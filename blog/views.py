@@ -13,3 +13,7 @@ def emojomo(request):
 
 def team(request):
     return render(request, 'blog/team.html', {})
+
+def map(request):
+    return render(request, 'blog/map.html', {})
+

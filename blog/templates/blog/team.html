@@ -79,15 +79,15 @@
   <header id="header" class="fixed-top header-inner-pages">
     <div class="container d-flex align-items-center">
 
-      <h3 class="logo mr-auto"><a href='{% url 'home' %}' ><p style="font-family: 'Do Hyeon', sans-serif;">수(水)리수리 정(淨)수리</p></a></h3>
+      <h3 class="logo mr-auto"><a href='{% url 'map' %}' ><p style="font-family: 'Do Hyeon', sans-serif;">수(水)리수리 정(淨)수리</p></a></h3>
       <!-- Uncomment below if you prefer to use an image logo -->
        <a href="home.html" class="logo mr-auto"><img src='{% static "img/logo.png" %}' alt="" class="img-fluid"></a>
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-          <li class="active"><a href='{% url 'home' %}'><p>전국수질지도</p></a></li>
+          <li><a href='{% url 'map' %}'><p>전국수질지도</p></a></li>
           <li><a href='{% url 'intro' %}'><p>개요</p></a></li>
           <li><a href='{% url 'emojomo' %}'><p>水돗물 이모저모</p></a></li>
-          <li><a href='{% url 'team' %}'><p>팀 포세이돈</p></a></li>
+          <li class="active"><a href='{% url 'team' %}'><p>팀 포세이돈</p></a></li>
         </ul>
       </nav><!-- .nav-menu -->
 
@@ -106,11 +106,7 @@
     <!-- ======= Breadcrumbs ======= -->
     <section id="breadcrumbs" class="breadcrumbs">
       <div class="container">
-        <ol>
-          <li><a href="index.html">홈</a></li>
-          <li>팀 포세이돈</li>
-        </ol>
-        <h2>팀 포세이돈 소개</h2>
+        <h2 style = 'text-align: center;'>팀 포세이돈 소개</h2>
       </div>
     </section>
     <!-- End Breadcrumbs -->
