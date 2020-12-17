@@ -49,7 +49,13 @@
       transition: top 0.2s ease-in-out;
     }
 
-
+    img {
+        width: auto;
+        height: auto;
+        max-width: 850px;
+        max-height: 850px;
+        object-fit: cover;
+        }
   </style>
 
 
@@ -85,7 +91,7 @@
       <nav class="nav-menu d-none d-lg-block">
         <ul>
           <li><a href='{% url 'map' %}'><p>전국수질지도</p></a></li>
-          <li><a href='{% url 'intro' %}'><p>개요</p></a></li>
+          <li><a href='{% url 'intro' %}'><p>프로젝트 개요</p></a></li>
           <li class="active"><a href='{% url 'emojomo' %}'><p>水돗물 이모저모</p></a></li>
           <li><a href='{% url 'team' %}'><p>팀 포세이돈</p></a></li>
         </ul>
@@ -109,12 +115,30 @@
 
     <section class="inner-page">
       <div class="container">
-        <p>
-          컨텐츠 입력
-        </p>
+
+
+
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title" data-aos="fade-right" data-aos-delay="100">
+          <br><h2>들어가기 전에</h2>
+          <img src='{% static "img/bonus.jpg" %}' class="img" alt=""><br><br><br><br><br><br>
+          <p> 경도를 연수(1∼60ppm), 아연수(61∼120ppm), 아경수(121∼180ppm), 경수(180ppm 이상) 기준으로 분류하고 <br>
+              연수 및 아연수에는 허브, 경수 및 아경수에는 커피아이콘으로 지도에 표시하면 다음과 같은 지도를 볼 수 있습니다.</p>
+          <img src='{% static "img/coffeeherb.png" %}' class="img" alt="">
+
+        </div>
+
+
+
+
+
+
+
+
+      </div>
       </div>
     </section>
-
   </main><!-- End #main -->
 
 
