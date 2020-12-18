@@ -17,3 +17,5 @@ def team(request):
 def map(request):
     return render(request, 'blog/map.html', {})
 
+def yaksuto(request):
+    return render(request, 'blog/yaksuto.html', {})
